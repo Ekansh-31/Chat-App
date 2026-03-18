@@ -29,6 +29,7 @@ import ProfileModal from "./ProfileModal";
 import { getSender } from "../../config/ChatLogics";
 import { ChatState } from "../../Context/ChatProvider";
 import UserListItem from "../userAvatar/UserListItem";
+import { BASE_URL } from "../../config";
 
 function SideDrawer() {
   const [search, setSearch] = useState("");
@@ -76,7 +77,7 @@ function SideDrawer() {
       };
 
       const { data } = await axios.get(
-        `http://localhost:5000/api/user?search=${search}`,
+        `${BASE_URL}/api/user?search=${search}`,
         config
       );
 
@@ -104,7 +105,7 @@ function SideDrawer() {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:5000/api/chat`,
+        `${BASE_URL}/api/chat`,
         { userId },
         config
       );
