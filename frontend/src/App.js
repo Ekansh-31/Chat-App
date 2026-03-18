@@ -9,13 +9,15 @@ import './App.css';
 
 function App() {
   return (
+  <Router>
     <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage/>}/>
-          <Route path="/chats" element={<ChatPage/>}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/chats" element={<ChatPage />} />
+      </Routes>
     </div>
-  );
+  </Router>
+);
 }
 
 export default App;
