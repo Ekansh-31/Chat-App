@@ -29,7 +29,7 @@ import ProfileModal from "./ProfileModal";
 import { getSender } from "../../config/ChatLogics";
 import { ChatState } from "../../Context/ChatProvider";
 import UserListItem from "../userAvatar/UserListItem";
-import { BASE_URL } from "../../config";
+import { BASE_URL } from "../../config/api";
 
 function SideDrawer() {
   const [search, setSearch] = useState("");

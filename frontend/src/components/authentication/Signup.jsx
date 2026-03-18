@@ -6,7 +6,7 @@ import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { BASE_URL } from "../../config";
+import { BASE_URL } from "../../config/api";
 
 const Signup = () => {
   const [show, setShow] = useState(false);
